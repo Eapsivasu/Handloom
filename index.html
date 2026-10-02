@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HandLoom — The Lookbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#home" class="logo" aria-label="HandLoom home">HandLoom</a>
+    <div class="nav-links">
+      <a href="#lookbook">Lookbook</a>
+      <a href="#weave">The Weave</a>
+      <a href="#craft">Craft</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-bag" id="nav-bag" type="button" aria-label="Open bag, 0 items">Bag (<span id="bag-count">0</span>)</button>
+      <a href="#shop" class="nav-cta">Shop the Edit</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" style="padding:0;">
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1717835806988-3739f9e55926?fm=jpg&q=80&w=2400&auto=format&fit=crop" alt="Model draped in a red and gold silk saree">
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow">The Autumn Weave — 2026</p>
+    <h1>Draped in <em>heritage</em>,<br>worn as your own.</h1>
+    <div class="hero-sub">
+      <p>HandLoom is a small-batch saree house working directly with weaver families in Kanchipuram, Varanasi and Chanderi. This season's edit, on real women, in real light.</p>
+      <div style="display:flex;gap:20px;align-items:center;">
+        <a href="#lookbook" class="btn-primary">View the Lookbook</a>
+        <a href="#weave" class="btn-line">Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP THE EDIT ============ -->
+<section class="shop-page" id="shop" hidden>
+  <div class="wrap">
+    <div class="shop-heading" id="shop-heading">
+      <p class="eyebrow">The Edit</p>
+      <h1>Shop the Edit</h1>
+      <p>A considered collection of handwoven sarees, selected from this season's lookbook.</p>
+    </div>
+    <div class="shop-products" id="shop-products" aria-label="Sarees in the edit"></div>
+    <div class="product-detail" id="product-detail" hidden></div>
+    <div class="bag-view" id="bag-view" hidden>
+      <div class="bag-heading">
+        <p class="eyebrow">HandLoom Bag</p>
+        <h1>Your Bag</h1>
+      </div>
+      <div id="cart-content"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-track">
+    Kanjeevaram Silk <span>&#10022;</span> Banarasi Brocade <span>&#10022;</span> Chanderi Cotton <span>&#10022;</span> Tussar Silk <span>&#10022;</span> Handwoven, Not Printed <span>&#10022;</span>
+    Kanjeevaram Silk <span>&#10022;</span> Banarasi Brocade <span>&#10022;</span> Chanderi Cotton <span>&#10022;</span> Tussar Silk <span>&#10022;</span> Handwoven, Not Printed <span>&#10022;</span>
+  </div>
+</div>
+
+<!-- ============ LOOKBOOK ============ -->
+<section id="lookbook">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">The Edit</p>
+        <h2>Four looks, four looms</h2>
+      </div>
+      <p>Shot on our customers, not agency models — because that's who actually wears these six yards.</p>
+    </div>
+    <div class="lookbook">
+      <div class="look">
+        <span class="look-index">Look 01</span>
+        <img src="https://images.unsplash.com/photo-1717835806988-3739f9e55926?fm=jpg&q=80&w=1400&auto=format&fit=crop" alt="Model in a red and gold Kanjeevaram silk saree with ornate jewellery">
+        <div class="look-caption">
+          <div>
+            <p class="eyebrow">Kanchipuram</p>
+            <h3>The Ashram Red</h3>
+          </div>
+          <div class="price">&#8377;18,900</div>
+        </div>
+      </div>
+      <div class="look">
+        <span class="look-index">Look 02</span>
+        <img src="https://images.unsplash.com/photo-1745482036066-5d215ed6b910?fm=jpg&q=80&w=1400&auto=format&fit=crop" alt="Model in a green traditional saree framed by garden florals">
+        <div class="look-caption">
+          <div>
+            <p class="eyebrow">Chanderi</p>
+            <h3>Garden Emerald</h3>
+          </div>
+          <div class="price">&#8377;9,400</div>
+        </div>
+      </div>
+      <div class="look">
+        <span class="look-index">Look 03</span>
+        <img src="https://images.unsplash.com/photo-1609748341642-ae4c6562bf3d?fm=jpg&q=80&w=1400&auto=format&fit=crop" alt="Model in a yellow and brown saree standing for a fashion photoshoot">
+        <div class="look-caption">
+          <div>
+            <p class="eyebrow">Bhagalpur</p>
+            <h3>Turmeric Tussar</h3>
+          </div>
+          <div class="price">&#8377;12,200</div>
+        </div>
+      </div>
+      <div class="look">
+        <span class="look-index">Look 04</span>
+        <img src="https://images.unsplash.com/photo-1743015346338-24d9627085b2?fm=jpg&q=80&w=1400&auto=format&fit=crop" alt="Model posing on a road wearing a green and purple saree">
+        <div class="look-caption">
+          <div>
+            <p class="eyebrow">Varanasi</p>
+            <h3>Street Silk</h3>
+          </div>
+          <div class="price">&#8377;24,500</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDITORIAL / ABOUT THE WEAVE ============ -->
+<section id="weave">
+  <div class="wrap editorial">
+    <div class="editorial-img">
+      <img src="https://images.unsplash.com/photo-1745482036066-5d215ed6b910?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Close portrait of a woman wearing a green saree">
+    </div>
+    <div class="editorial-text">
+      <p class="eyebrow">Our Story</p>
+      <h2>We didn't want another saree brand with a catalogue. We wanted one with a face.</h2>
+      <p>Every HandLoom saree is worn first by the women who buy it — real fittings, real feedback, real photographs, before anything ships. No retouched drape, no borrowed bodies.</p>
+      <p>We work loom-to-door with under thirty weaver families, which means smaller runs, longer waits, and a saree that actually looks like the one in the photo.</p>
+      <p class="sign">— The HandLoom Studio</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRAFT PROCESS ============ -->
+<section id="craft" class="craft">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">From Fibre to Fold</p>
+        <h2>How a HandLoom saree is made</h2>
+      </div>
+      <p>Five stages, one weaver, six to twenty-one days on the loom depending on the weave.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num">01</span>
+        <h3>Thread Selection</h3>
+        <p>Mulberry silk and cotton yarn hand-picked and graded for strength and sheen.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3>Dyeing</h3>
+        <p>Small-batch dyeing, matched by eye to each season's palette.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3>Warping</h3>
+        <p>Thousands of warp threads aligned by hand before a single weft is thrown.</p>
+      </div>
+      <div class="step">
+        <span class="num">04</span>
+        <h3>Weaving</h3>
+        <p>The weaver builds the pallu's motifs thread by thread, over days.</p>
+      </div>
+      <div class="step">
+        <span class="num">05</span>
+        <h3>Finishing</h3>
+        <p>Edges secured, steam-pressed, and checked against the loom card.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section class="testimonial">
+  <div class="wrap">
+    <blockquote>&ldquo;They photographed me in it before they photographed a model. That's the first time a saree site has felt like it was actually for someone like me.&rdquo;</blockquote>
+    <cite>— Priya R., Chennai</cite>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Stay on the Loom</p>
+    <h2>New drops, first to your inbox</h2>
+    <p>One email a month — new arrivals, weaver stories, and early access to limited runs.</p>
+    <form class="newsletter-form" id="newsletter-form">
+      <input type="email" placeholder="you@email.com" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">HandLoom</div>
+        <p>Handwoven sarees sourced directly from weaver clusters across India, shot on the women who actually wear them.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#lookbook">Kanjeevaram</a></li>
+          <li><a href="#lookbook">Banarasi</a></li>
+          <li><a href="#lookbook">Chanderi</a></li>
+          <li><a href="#lookbook">Tussar Silk</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#weave">Our Story</a></li>
+          <li><a href="#craft">The Craft</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Saree Care</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 HandLoom. All sarees woven by hand.</span>
+      <span>Kanchipuram &middot; Varanasi &middot; Chanderi &middot; Bhagalpur</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
